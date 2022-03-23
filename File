@@ -1,0 +1,15 @@
+package Com.Config;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Setup {
+	public WebDriver initdriver() {
+		System.setProperty("webdriver.chrome.driver", Configuration.driverPath);
+
+		WebDriver driver = new ChromeDriver();
+
+		return driver;
+	}
+
+}
